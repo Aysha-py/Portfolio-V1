@@ -17,21 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 
-gsap.set(".project-box", { opacity: 1, y: 50 });
 
-     gsap.set(".project-box", { opacity: 0, y: 50 });
-    gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.create({
-        trigger: ".project-box",
-        start: "top 1%", 
-        end: "bottom top",
-        onEnter: function () {
-            gsap.to(".project-box", {
-                duration: 1.5,
-                opacity: 1,
-                y: 0,
-                ease: "power2.out",
-            });
-        },
-    });
 });
